@@ -28,7 +28,7 @@ module Actions
           host = ::Host::Base.find(input[:host_id])
 
           _success, host = assign_host_to_hostgroup(host, hostgroup)
-          sleep_before_reboot
+          #sleep_before_reboot
           reboot_host(host) if host
         end
 
@@ -107,7 +107,8 @@ module Actions
 
           Rails.logger.warn "XXX assignee host type is now: #{assignee_host.type}"
 
-          host.save!
+          Rails.logger.warn "XXX COMMENTING OUT the save!"
+          #host.save!
 
           [host.save, host].tap do |saved, _|
             assignee_host.becomes(Host::Base).update_column(:type, original_type) unless saved
@@ -120,8 +121,8 @@ module Actions
 
         def reboot_host(host)
           Rails.logger.warn "XXX About to reboot host"
-          host.becomes(::Host::Discovered).reboot unless host.nil?
-          Rails.logger.warn "XXX host rebooted"
+          #host.becomes(::Host::Discovered).reboot unless host.nil?
+          Rails.logger.warn "XXX host rebooted. SHOULD DO NOTHING NOW, LET DISCOVERY TAKE CARE OF IT"
         end
 
         def find_hostgroup(deployment, name)
