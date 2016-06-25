@@ -12,43 +12,51 @@
     :rhevm:
       - :product_name: "Red Hat Enterprise Linux Server"
         :product_id: "69"
-        :repository_set_id: "168"
-        :repository_set_name: "Red Hat Enterprise Linux 6 Server (RPMs)"
+        :repository_set_id: "2456"
+        :repository_set_name: "Red Hat Enterprise Linux 7 Server (RPMs)"
         :basearch: "x86_64"
-        :releasever: "6Server"
+        :releasever: "7Server"
 
       - :product_name: "Red Hat Enterprise Linux Server"
         :product_id: "69"
-        :repository_set_id: "1952"
-        :repository_set_name: "Red Hat Enterprise Linux 6 Server (Kickstart)"
+        :repository_set_id: "2476"
+        :repository_set_name: "Red Hat Enterprise Linux 7 Server - Supplementary (RPMs)"
         :basearch: "x86_64"
-        :releasever: "6.7"
+        :releasever: "7Server"
 
       - :product_name: "Red Hat Enterprise Linux Server"
         :product_id: "69"
-        :repository_set_id: "4185"
-        :repository_set_name: "Red Hat Satellite Tools 6.1 (for RHEL 6 Server) (RPMs)"
+        :repository_set_id: "2463"
+        :repository_set_name: "Red Hat Enterprise Linux 7 Server - Optional (RPMs)"
         :basearch: "x86_64"
+        :releasever: "7Server"
 
       - :product_name: "Red Hat Enterprise Linux Server"
         :product_id: "69"
-        :repository_set_id: "1673"
-        :repository_set_name: "Red Hat Enterprise Linux 6 Server - Supplementary (RPMs)"
+        :repository_set_id: "2455"
+        :repository_set_name: "Red Hat Enterprise Linux 7 Server (Kickstart)"
         :basearch: "x86_64"
-        :releasever: "6Server"
+        :releasever: "7.2"
+
+      - :product_name: "Red Hat Enterprise Linux Server"
+        :product_id: "69"
+        :repository_set_id: "4188"
+        :repository_set_name: "Red Hat Satellite Tools 6.1 (for RHEL 7 Server) (RPMs)"
+        :basearch: "x86_64"
 
       - :product_name: "Red Hat Enterprise Virtualization"
         :product_id: "150"
-        :repository_set_id: "4425"
-        :repository_set_name: "Red Hat Enterprise Virtualization Manager 3.6 (RPMs)"
+        :repository_set_id: "5028"
+        :repository_set_name: "Red Hat Virtualization Manager 4 Beta (RPMs)"
         :basearch: "x86_64"
+        #:releasever: "7Server"
 
       - :product_name: "JBoss Enterprise Application Platform"
         :product_id: "183"
-        :repository_set_id: "1559"
-        :repository_set_name: "JBoss Enterprise Application Platform 6 (RHEL 6 Server) (RPMs)"
+        :repository_set_id: "4474"
+        :repository_set_name: "JBoss Enterprise Application Platform 7 (RHEL 7 Server) (RPMs)"
         :basearch: "x86_64"
-        :releasever: "6Server"
+        :releasever: "7Server"
 
     :rhevh:
       - :product_name: "Red Hat Enterprise Linux Server"
@@ -60,6 +68,20 @@
 
       - :product_name: "Red Hat Enterprise Linux Server"
         :product_id: "69"
+        :repository_set_id: "2476"
+        :repository_set_name: "Red Hat Enterprise Linux 7 Server - Supplementary (RPMs)"
+        :basearch: "x86_64"
+        :releasever: "7Server"
+
+      - :product_name: "Red Hat Enterprise Linux Server"
+        :product_id: "69"
+        :repository_set_id: "2463"
+        :repository_set_name: "Red Hat Enterprise Linux 7 Server - Optional (RPMs)"
+        :basearch: "x86_64"
+        :releasever: "7Server"
+
+      - :product_name: "Red Hat Enterprise Linux Server"
+        :product_id: "69"
         :repository_set_id: "2455"
         :repository_set_name: "Red Hat Enterprise Linux 7 Server (Kickstart)"
         :basearch: "x86_64"
@@ -73,10 +95,10 @@
 
       - :product_name: "Red Hat Enterprise Virtualization"
         :product_id: "150"
-        :repository_set_id: "3109"
-        :repository_set_name: "Red Hat Enterprise Virtualization Management Agents for RHEL 7 (RPMs)"
+        :repository_set_id: "3112"
+        :repository_set_name: "Red Hat Enterprise Virtualization Management Agents Beta for RHEL 7 (RPMs)"
         :basearch: "x86_64"
-        :releasever: "7Server"
+        #:releasever: "7Server"
 
     :rhevsh:
       - :product_name: "Red Hat Enterprise Linux Server"
@@ -88,6 +110,20 @@
 
       - :product_name: "Red Hat Enterprise Linux Server"
         :product_id: "69"
+        :repository_set_id: "2476"
+        :repository_set_name: "Red Hat Enterprise Linux 7 Server - Supplementary (RPMs)"
+        :basearch: "x86_64"
+        :releasever: "7Server"
+
+      - :product_name: "Red Hat Enterprise Linux Server"
+        :product_id: "69"
+        :repository_set_id: "2463"
+        :repository_set_name: "Red Hat Enterprise Linux 7 Server - Optional (RPMs)"
+        :basearch: "x86_64"
+        :releasever: "7Server"
+
+      - :product_name: "Red Hat Enterprise Linux Server"
+        :product_id: "69"
         :repository_set_id: "2455"
         :repository_set_name: "Red Hat Enterprise Linux 7 Server (Kickstart)"
         :basearch: "x86_64"
@@ -101,10 +137,10 @@
 
       - :product_name: "Red Hat Enterprise Virtualization"
         :product_id: "150"
-        :repository_set_id: "3109"
-        :repository_set_name: "Red Hat Enterprise Virtualization Management Agents for RHEL 7 (RPMs)"
+        :repository_set_id: "3112"
+        :repository_set_name: "Red Hat Enterprise Virtualization Management Agents Beta for RHEL 7 (RPMs)"
         :basearch: "x86_64"
-        :releasever: "7Server"
+        #:releasever: "7Server"
 
     :cloudforms:
       #- :product_name: "Red Hat CloudForms"
@@ -171,7 +207,6 @@
         :repository_set_name: "Red Hat Enterprise Linux 7 Server - Optional (RPMs)"
         :basearch: "x86_64"
         :releasever: "7Server"
-
 
     :openstack:
       - :product_name: "Red Hat Enterprise Linux Server"
